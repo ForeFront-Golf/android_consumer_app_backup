@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="17dp"
+    android:paddingBottom="104dp"
+    android:background="@color/fore_order_medium_grey">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue_percent_70"
+            android:textSize="14sp"
+            android:text="@string/subtotal" />
+
+        <TextView
+            android:id="@+id/textview_subtotal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue_percent_70"
+            android:textSize="14sp"
+            android:text="$80.00" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_hst"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue_percent_70"
+            android:textSize="14sp"
+            android:text="@string/hst" />
+
+        <TextView
+            android:id="@+id/textview_hst_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue_percent_70"
+            android:textSize="14sp"
+            android:text="$8.00"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/textview_order_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fore_order_blue"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="$88.00"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <com.rhinodesktop.foreorder_golf_consumer.views.BlueCheckboxButton
+        android:id="@+id/checkbox_multi_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="19dp"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/textview_option_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/checkbox_multi_option"
+        android:text="Option Item"
+        android:textColor="@color/fore_order_blue"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textview_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="+0.00"
+        android:textColor="@color/fore_order_blue_percent_50"
+        android:textSize="11dp" />
+
+</RelativeLayout>

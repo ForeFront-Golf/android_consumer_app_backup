@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="408dp"
+            android:background="@color/fore_order_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_add_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/prof_image_placeholder" />
+
+            <ImageView
+                android:id="@+id/imageview_profile_image_create"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview_user_image_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/prof_image_outline" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edittext_first_name"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/white_percent_50"
+                android:color="@color/white_percent_50"
+                android:fontFamily="sans-serif"
+                android:hint="@string/first"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/edittext_last_name"
+                android:padding="11dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_percent_50"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittext_last_name"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/white_percent_50"
+                android:color="@color/white_percent_50"
+                android:fontFamily="sans-serif"
+                android:hint="@string/last"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/edittext_phone_number"
+                android:padding="11dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_percent_50"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edittext_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/white_percent_50"
+                android:color="@color/white_percent_50"
+                android:fontFamily="sans-serif"
+                android:hint="@string/enter_phone_number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/edittext_date_of_birth"
+                android:padding="11dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_percent_50"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittext_date_of_birth"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/white_percent_50"
+                android:clickable="false"
+                android:color="@color/white_percent_50"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:hint="@string/enter_date_of_birth"
+                android:inputType="date"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/edittext_email_create"
+                android:padding="11dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_percent_50"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edittext_email_create"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/white_percent_50"
+            android:color="@color/white_percent_50"
+            android:fontFamily="sans-serif"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="11dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_percent_50"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_email_login"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/edittext_password_create"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="@color/white_percent_50"
+                android:color="@color/white_percent_50"
+                android:fontFamily="sans-serif"
+                android:hint="@string/set_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="11dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_percent_50"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/imageview_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/icon_check_password" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_create_account"
+            fontPath="fonts/Montserrat_Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/fore_order_blue"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+[submodule ".Libraries/GeneralUtilities"]
+	path = .Libraries/GeneralUtilities
+	url = https://handrin@bitbucket.org/rhinoactive/generalutilities.git
+[submodule "Libraries/GeneralUtilities"]
+	path = Libraries/GeneralUtilities
+	url = https://handrin@bitbucket.org/rhinoactive/generalutilities.git

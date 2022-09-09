@@ -1,0 +1,3 @@
+[submodule "Libraries/JsonParserCallback"]
+	path = Libraries/JsonParserCallback
+	url = https://bitbucket.org/rhinoactive/jsonparsercallback.git

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fore_order_darker_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_menu_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fore_order_darker_white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textview_menu_title"
+            fontPath="fonts/Montserrat_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="31dp"
+            android:text="LOCATION/MENU TITLE"
+            android:textColor="@color/fore_order_blue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textview_menu_info"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_menu_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="All orders will be delivered to your current"
+            android:textColor="@color/fore_order_blue_percent_50"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_section_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="Header Name"
+        android:textColor="@color/fore_order_blue_percent_40"
+        android:textSize="14dp" />
+
+</LinearLayout>

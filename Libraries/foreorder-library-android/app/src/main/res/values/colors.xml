@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E283D</color>
+    <color name="colorPrimaryDark">#0A1C2B</color>
+    <color name="colorAccent">#919EA7</color>
+
+    <color name="fore_order_blue">#0E283D</color>
+    <color name="fore_order_blue_percent_10">#1A0E283D</color>
+    <color name="fore_order_blue_percent_40">#660E283D</color>
+    <color name="fore_order_blue_percent_50">#800E283D</color>
+    <color name="fore_order_blue_percent_70">#B30E283D</color>
+    <color name="fore_order_blue_percent_95">#F20E283D</color>
+    <color name="fore_order_blue_membership">#FF0E283D</color>
+    <color name="fore_order_dark_blue">#0A1C2B</color>
+    <color name="fore_order_dark_blue_percent_90">#E60A1C2B</color>
+    <color name="fore_order_red">#FC6B5B</color>
+    <color name="fore_order_red_percent_70">#B3FC6B5B</color>
+    <color name="fore_order_brown">#211D26</color>
+    <color name="fore_order_grey">#919EA7</color>
+    <color name="fore_order_medium_grey">#F6F6F6</color>
+    <color name="fore_order_dark_grey">#37343C</color>
+    <color name="fore_order_green">#28D897</color>
+    <color name="fore_order_darker_white">#F4F5F6</color>
+    <color name="fore_order_jump_nav_text_color">#4A4A4A</color>
+    <color name="fore_order_item_text">#929292</color>
+    <color name="fore_order_white">#FDFDFD</color>
+    <color name="unselected_tab_text">#A5A3A7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_percent_25">#40ffffff</color>
+    <color name="white_percent_30">#4Dffffff</color>
+    <color name="white_percent_40">#66ffffff</color>
+    <color name="white_percent_45">#73ffffff</color>
+    <color name="white_percent_50">#80FFFFFF</color>
+    <color name="white_percent_60">#99FFFFFF</color>
+    <color name="white_percent_70">#B3FFFFFF</color>
+    <color name="white_percent_75">#BFffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black_percent_10">#1A000000</color>
+    <color name="transparent_black_percent_25">#40000000</color>
+    <color name="transparent_black_percent_40">#66000000</color>
+    <color name="transparent_black_percent_50">#66000000</color>
+    <color name="transparent_black_percent_60">#99000000</color>
+    <color name="transparent_black_percent_70">#B3000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

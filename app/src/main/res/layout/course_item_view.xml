@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12dp">
+
+    <TextView
+        android:id="@+id/textview_course_name"
+        fontPath="fonts/Montserrat_Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/course_name"
+        android:textColor="@color/fore_order_blue"
+        android:textSize="17dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_course_card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/textview_distance_from_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/km"
+            android:textColor="@color/fore_order_blue_percent_50"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/button_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:padding="30dp"
+            android:src="@drawable/icon_navigate" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/button_directions"
+            android:background="@color/fore_order_blue_percent_10" />
+
+        <ImageButton
+            android:id="@+id/button_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rlayout_vertical_line"
+            android:background="@color/transparent"
+            android:padding="30dp"
+            android:src="@drawable/icon_call" />
+
+    </RelativeLayout>
+</LinearLayout>

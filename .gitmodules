@@ -1,0 +1,24 @@
+[submodule "Libraries/FacebookUtilities"]
+	path = Libraries/FacebookUtilities
+	url = https://bitbucket.org/rhinoactive/facebookutilities.git
+[submodule "Libraries/GeneralUtilities"]
+	path = Libraries/GeneralUtilities
+	url = https://bitbucket.org/rhinoactive/generalutilities.git
+[submodule "Libraries/ActivityAnimatorUtility"]
+	path = Libraries/ActivityAnimatorUtility
+	url = https://bitbucket.org/rhinoactive/activityanimatorutility.git
+[submodule "Libraries/ImageUtility"]
+	path = Libraries/ImageUtility
+	url = https://bitbucket.org/rhinoactive/imageutility.git
+[submodule "Libraries/PermissionUtilities"]
+	path = Libraries/PermissionUtilities
+	url = https://bitbucket.org/rhinoactive/permissionutilities.git
+[submodule "Libraries/LocationUtilities"]
+	path = Libraries/LocationUtilities
+	url = https://bitbucket.org/rhinoactive/locationutilities.git
+[submodule "Libraries/foreorder-library-android"]
+	path = Libraries/foreorder-library-android
+	url = https://bitbucket.org/rhinoactive/foreorder-library-android.git
+[submodule "Libraries/NoInternetView"]
+	path = Libraries/NoInternetView
+	url = https://bitbucket.org/rhinoactive/nointernetview.git

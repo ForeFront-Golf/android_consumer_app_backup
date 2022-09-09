@@ -1,0 +1,3 @@
+include ':app'
+include ':jsonparsercallback'
+project(":jsonparsercallback").projectDir = new File('Libraries/JsonParserCallback/app')

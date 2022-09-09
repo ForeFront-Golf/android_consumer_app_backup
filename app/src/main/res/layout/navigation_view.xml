@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_view"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/navigation_view_header"/>
+
+        <LinearLayout
+            android:id="@+id/llayout_menu_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:background="@color/fore_order_blue">
+
+            <LinearLayout
+                android:id="@+id/llayout_membership"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="@string/membership"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="@string/privacy_policy"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_terms_of_use"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="@string/terms_of_use"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="18dp"
+                        android:textColor="@color/white_percent_30"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16dp"
+                        android:text="@string/logout"/>
+
+                    <TextView
+                        android:id="@+id/textview_version_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="21dp"
+                        android:paddingBottom="18dp"
+                        android:textColor="@color/white_percent_30"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>

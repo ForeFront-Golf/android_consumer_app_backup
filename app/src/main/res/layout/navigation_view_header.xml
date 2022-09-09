@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="189dp"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_pattern_dots_white_full"/>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_profile_photo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imageview_user_image_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/transparent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/prof_image_outline" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/rlayout_profile_photo"
+        android:layout_marginTop="66dp"
+        android:textColor="@color/white_percent_60"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/textview_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="29dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@id/rlayout_profile_photo"
+        android:layout_below="@id/textview_user_name"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:text="@string/edit" />
+
+</RelativeLayout>

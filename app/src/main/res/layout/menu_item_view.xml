@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fore_order_darker_white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_food_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_menu_item_name"
+                fontPath="fonts/Montserrat_Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.5dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/item_name"
+                android:textColor="@color/fore_order_blue"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textview_menu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_menu_item_name"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="13.5dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/price_text"
+                android:textColor="@color/fore_order_blue_percent_50"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageview_menu_item"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.5dp"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

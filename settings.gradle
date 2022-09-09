@@ -1,0 +1,19 @@
+include ':app'
+include ':facebookutilities'
+project(':facebookutilities').projectDir = new File('Libraries/FacebookUtilities/app')
+include ':jsonparsercallback'
+project(':jsonparsercallback').projectDir = new File('Libraries/FacebookUtilities/Libraries/JsonParserCallback/app')
+include ':generalutilities'
+project(':generalutilities').projectDir = new File('Libraries/GeneralUtilities/app')
+include ':activityanimatorutility'
+project(':activityanimatorutility').projectDir = new File('Libraries/ActivityAnimatorUtility/app')
+include ':imageutility'
+project(':imageutility').projectDir = new File('Libraries/ImageUtility/app')
+include ':permissionutilities'
+project(':permissionutilities').projectDir = new File('Libraries/PermissionUtilities/app')
+include ':locationutilities'
+project(':locationutilities').projectDir = new File('Libraries/LocationUtilities/app')
+include ':foreorder-library-android'
+project(':foreorder-library-android').projectDir = new File('Libraries/foreorder-library-android/app')
+include ':nointernetview'
+project(':nointernetview').projectDir = new File('Libraries/NoInternetView/app')

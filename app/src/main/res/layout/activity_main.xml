@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.rhinodesktop.foreorder_golf_consumer.activities.MainActivity">
+
+        <include
+            layout="@layout/drawer_appbar_layout"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_view_cart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@color/fore_order_blue"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textview_price_in_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white_percent_75"
+                android:layout_marginLeft="16dp"
+                android:textSize="16dp"
+                fontPath="fonts/Montserrat_Bold.ttf"
+                android:text="$100.00"/>
+
+            <TextView
+                android:id="@+id/textview_view_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                fontPath="fonts/Montserrat_Bold.ttf"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/view_cart"/>
+
+            <TextView
+                android:id="@+id/textview_number_of_items_in_cart"
+                android:layout_width="67.5dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                fontPath="fonts/Montserrat_Bold.ttf"
+                android:background="@color/white_percent_45"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="1"/>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/no_gps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.rhinodesktop.foreorder_golf_consumer.views.JumpNavButton
+        android:id="@+id/jumpnavbutton_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/navigation_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

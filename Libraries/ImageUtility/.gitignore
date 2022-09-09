@@ -1,0 +1,15 @@
+*.iml
+.DS_Store
+.gradle/
+.idea/
+ZimityAndroid.iml
+build/
+app/app.iml
+app/build/
+app/fabric.properties
+app/src/debug/
+app/src/release/
+captures/
+local.properties
+projectFilesBackup/
+.externalNativeBuild

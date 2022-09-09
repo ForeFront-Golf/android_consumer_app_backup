@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flayout_jump_nav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/flayout_dim_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fore_order_dark_blue_percent_90"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/flayout_jump_nav_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="4dp">
+
+        <LinearLayout
+            android:id="@+id/llayout_jump_section_nav"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="9dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|right"
+            android:background="@color/fore_order_darker_white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_height="37dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/textview_jump_to_item_type_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/jump_to_section"
+                    android:textColor="@color/fore_order_blue_percent_50"
+                    android:textSize="12dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="0dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="5dp">
+
+            <ImageButton
+                android:id="@+id/button_jump_section"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@color/fore_order_blue"
+                android:src="@drawable/icon_jump_menu_wht"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</FrameLayout>
